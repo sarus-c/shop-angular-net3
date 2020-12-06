@@ -1,14 +1,13 @@
 <div class="card mb-4 shadow-sm">
     <img src="{{product.pictureUrl}}" class="card-img-top bg-info" alt="{{product.name}}" />
+    <div class="d-flex align-items center justify-content-center hover-overlay mt-2">
+        <button type="button" class="btn btn-outline-success fa fa-shopping-cart mr-2"></button>
+        <button type="button" routerLink="/shop/{{product.id}}" class="btn btn-outline-primary">View</button>
+    </div>
     <div class="card-body">
         <a routerLink="/shop/{{product.id}}">
             <h5 class="card-title">{{product.name}}</h5>
         </a>
         <p class="card-text">{{product.price | currency}}</p>
-
-        <div class="btn-group mt-auto">
-            <button type="button" class="btn btn-outline-secondary fa fa-shopping-cart mr-2"></button>
-            <button type="button" routerLink="/shop/{{product.id}}" class="btn btn-outline-secondary">View</button>
-        </div>
     </div>
 </div>

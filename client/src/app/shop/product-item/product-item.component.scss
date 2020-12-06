@@ -1,7 +1,10 @@
-.btn-group {
-    width: 100%;
-}
-
 .btn {
     width: 50%;
+    height: 40px;
+}
+.card-img-top{
+    &:hover {
+        filter: saturate(0);
+        transition: all ease 0.5s;
+    }
 }
